@@ -1,0 +1,22 @@
+body{
+    
+    background-color: antiquewhite ;
+
+}
+   
+.aulas{
+    position: relative;
+    margin-left: 10pt;
+    margin-left: 1380pt;
+    text-align: end;
+    background-color: rgb(250, 250, 250);
+    border-top: 0%;
+    border-color: black;
+
+ }
+ .aulas:hover s{
+    margin-left: 20pt;
+    margin-top: 10pt;
+    margin-right: 1350pt;
+background-color: black;
+ }
