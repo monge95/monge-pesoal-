@@ -78,11 +78,13 @@ nav a:first-child:hover {
     text-align: center; /* Garante que o texto fique alinhado à esquerda*/  
     background-color: #000000; /* torna o div colorido */
    color: #ffffff;
+
 }
 
 #Contato ul {
     list-style-type: none; /* Remove as bolinhas da lista */
     padding: 0; /* Remove o padding padrão */
+    text-decoration: none;
 }
 
 #redesocial img {
@@ -95,8 +97,18 @@ nav a:first-child:hover {
 
 
 
+.CerterTex1{
+    block-size: auto;
+    text-align: justify;
+    background-color: #fff
+    
+}
 
 
 
+#redirecionamento{
+position: absolute;
+background-color: aliceblue;
 
 
+}
