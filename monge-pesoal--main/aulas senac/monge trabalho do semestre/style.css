@@ -1,9 +1,11 @@
 @charset "UTF8";
 
+/* lembra de trocar as cores no final  */
+
 
 /* configurações gerais */
 *{
-  margin: -0px;
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,8 +14,7 @@ p{
 }
 
 body{
-    background-color: #6F8695;
-
+    background-color: #F2F2F2;
 }  
 
 
@@ -25,14 +26,21 @@ header {
     justify-content: space-between; /* Alinha os itens: logo à esquerda, links à direita */
     align-items: center; /* Centraliza verticalmente os itens no header */
     padding: 10px 20px; /* Espaçamento interno */
-    background-color: #fff; /* Cor de fundo opcional */
+    background-color: ##D9AA71; /* Cor de fundo opcional */
     height: 0px;    /* Altura total do header */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
     margin-block-end: 0%;
 }
 
+#h1{
+  
+  font-family: comic;
+  margin-left: 35%;
+  margin-right: 30%;
+  color: #D9AA71;
+}
 nav {
-    background-color: #6F8695;
+    background-color: #F2F2F2;
     height: 70px;
 
     display: flex; /* Torna o nav um contêiner flexível */
@@ -41,7 +49,7 @@ nav {
 }
 
 nav > a {
-    color: white;
+    color: #D9AA71;
     font-size: 36px;
     text-decoration: none;
     font-weight: 500;
@@ -67,7 +75,7 @@ nav a:first-child {
 }
 
 nav a:first-child:hover {
-    color: #64a6ec; /* Altera a cor ao passar o mouse */
+    color: #D9A404; /* Altera a cor ao passar o mouse */
 }
 
 /* div do contato   */ 
@@ -100,7 +108,7 @@ nav a:first-child:hover {
 #CenterTex1{
     block-size: auto;
     text-align: justify;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
     margin-left: 320px;
     margin-right: 50px;
     padding: 10px 20px; 
@@ -109,7 +117,7 @@ nav a:first-child:hover {
 #CenterTex2{
     block-size: auto;
     text-align: justify;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
     margin-left: 320px;
     margin-right: 50px;
     padding: 10px 20px; 
@@ -118,7 +126,7 @@ nav a:first-child:hover {
 #CenterTex3{
     block-size: auto;
     text-align: justify;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
     margin-left: 320px;
     margin-right: 50px;
     padding: 10px 20px; 
@@ -127,24 +135,19 @@ nav a:first-child:hover {
 #CenterTex4{
     block-size: auto;
     text-align: justify;
-    background-color: #fff;
-    margin-left: 320px;
-    margin-right: 50px;
-    padding: 10px 20px; 
-    margin-block-end: 1%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 40px 80px; 
+    margin-block-end: 2%;
 }
 
 
-
-#redirecionamento{
-    position: absolute;
-background-color: rgb(238, 16, 16);
-color: #fff ;
-padding: 10px 20px; 
-height: 300px;
-margin-left: 20px;
-margin-right: 1640px;
-margin-top: 0px;
-
+#imgDog{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #F2F2F2;
 
 }
+
+
