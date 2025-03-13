@@ -26,7 +26,7 @@ header {
     justify-content: space-between; /* Alinha os itens: logo à esquerda, links à direita */
     align-items: center; /* Centraliza verticalmente os itens no header */
     padding: 10px 20px; /* Espaçamento interno */
-    background-color: ##D9AA71; /* Cor de fundo opcional */
+    background-color: #D9AA71; /* Cor de fundo opcional */
     height: 0px;    /* Altura total do header */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
     margin-block-end: 0%;

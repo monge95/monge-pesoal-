@@ -1,0 +1,49 @@
+/* Header */
+header {
+    position:static ;
+    top: 0; /* Faz o header "grudar" no topo ao rolar a página */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #D9AA71; /* Cor de fundo opcional */
+    height: 0px;    /* Altura total do header */
+    margin-block-end: 0%;
+}
+
+#h1{
+  
+  font-family: comic;
+text-align: center;
+  color: #457c57;
+}
+nav {
+    background-color: #ffffff;
+    height: 70px;
+
+    display: flex; /* Torna o nav um contêiner flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+nav > a {
+    color: #D9AA71;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    margin: 0 15px; /* Espaçamento horizontal entre os links */
+    transition: 0.5s;
+}
+nav > a:hover {
+    text-decoration: underline;
+    font-size: 39px;
+    transition: 0.5s;
+}
+
+nav a:first-child {
+    font-size: 24px; /* Aumenta o tamanho do ícone */
+    color: #333; /* Define a cor do ícone */
+    margin-right: 10px; /* Dá um pouco de espaço após o ícone */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+nav a:first-child:hover {
+    color: #D9A404; /* Altera a cor ao passar o mouse */
+}
