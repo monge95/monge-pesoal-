@@ -54,6 +54,37 @@ nav a:first-child:hover {
 
 
 /* index abaixo  */
+#artigo1{
+    background-color: #1178a100;
+    position: static;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 60px;
+    border-radius: 100px;
+    border-color: #1179a1;
+    border:solid 1px;
+    box-shadow: 5px 5px 5px 3px  #1179a1;;
+    text-align: justify;
+    padding: 40px 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.nota{
+    text-align: right;
+    font-size: 17px;
+}
+
+#alexandre{
+    width: 60%;
+    margin: auto;
+    display: block; 
+}
+
+
+
+
+/* gp2 abaixo  */
 #v1{
  background-color: #000000;
  position: static;
