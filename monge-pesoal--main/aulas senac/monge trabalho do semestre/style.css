@@ -1,153 +1,205 @@
-@charset "UTF8";
+@charset "UTF-8";
 
-/* lembra de trocar as cores no final  */
-
-
-/* configurações gerais */
-*{
-
-    font-family: Arial, Helvetica, sans-serif;
+/* Reset */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-p{
-    margin: 5px;
+body {
+  background-color: #F2F2F2;
 }
-
-body{
-    background-color: #F2F2F2;
-}  
-
 
 /* Header */
 header {
-    position:static ;
-    top: 0; /* Faz o header "grudar" no topo ao rolar a página */
-    display: flex; /* Torna o header um contêiner flexível */
-    justify-content: space-between; /* Alinha os itens: logo à esquerda, links à direita */
-    align-items: center; /* Centraliza verticalmente os itens no header */
-    padding: 10px 20px; /* Espaçamento interno */
-    background-color: #D9AA71; /* Cor de fundo opcional */
-    height: 0px;    /* Altura total do header */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
-    margin-block-end: 0%;
+  width: 100%;
+  background-color: #D9AA71;
+  padding: 16px 0;
+  text-align: center;
+  position: relative;
 }
-
-#h1{
-  
-  font-family: comic;
-  margin-left: 35%;
-  margin-right: 30%;
+#h1 {
+  font-family: Comic Sans MS, Comic, cursive;
   color: #D9AA71;
+  background: #fff;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  max-width: 90vw;
+  font-size: 2rem;
 }
-nav {
-    background-color: #F2F2F2;
-    height: 70px;
 
-    display: flex; /* Torna o nav um contêiner flexível */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
+nav {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
 }
 
 nav > a {
-    color: #D9AA71;
-    font-size: 36px;
-    text-decoration: none;
-    font-weight: 500;
-    font-family: "Open Sans", sans-serif;
-
-    margin: 0 15px; /* Espaçamento horizontal entre os links */
-
-    transition: 0.5s;
+  color: #D9AA71;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 nav > a:hover {
-    text-decoration: underline;
-
-    font-size: 39px;
-
-    transition: 0.5s;
+  text-decoration: underline;
+  font-size: 1.7rem;
 }
 
 nav a:first-child {
-    font-size: 24px; /* Aumenta o tamanho do ícone */
-    color: #333; /* Define a cor do ícone */
-    margin-right: 10px; /* Dá um pouco de espaço após o ícone */
-    text-decoration: none; /* Remove sublinhado */
+  font-size: 1.2rem;
+  color: #333;
 }
 
 nav a:first-child:hover {
-    color: #D9A404; /* Altera a cor ao passar o mouse */
+  color: #D9A404;
 }
 
-/* div do contato   */ 
-
-#Contato {
-    position: relative;
-    margin-block-end: auto;
-    text-align: center; /* Garante que o texto fique alinhado à esquerda*/  
-    background-color: #000000; /* torna o div colorido */
-   color: #ffffff;
-
+/* Imagem principal */
+#imgDog img {
+  max-width: 90vw;
+  height: auto;
+  display: block;
+  margin: 32px auto 16px auto;
 }
 
-#Contato ul {
-    list-style-type: none; /* Remove as bolinhas da lista */
-    padding: 0; /* Remove o padding padrão */
-    text-decoration: none;
+/* Blocos centrais de texto */
+#CenterTex1, #CenterTex2, #CenterTex3, #CenterTex4 {
+  margin: 24px auto;
+  background: rgba(0, 0, 0, 0);
+  text-align: justify;
+  max-width: 700px;
+  padding: 18px 16px;
 }
 
+/* Rodapé */
+footer {
+  background: #000;
+  color: #fff;
+  margin-top: 32px;
+  padding: 24px 0 12px 0;
+  text-align: center;
+}
+#Contato h1 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+#Contato a {
+  color: #F2F2F2;
+}
 #redesocial img {
-    height: 50px; /* Ajusta a altura da logo */
-    max-width: 100px; /* Garante que a largura não ultrapasse 100px */
-    margin-left: 90%;
-    margin-top: -150px;
-    
+  height: 40px;
+  max-width: 80px;
+  margin: 16px auto 0 auto;
+  display: block;
 }
 
-/* divis de organização do corpo do texto */
-
-#CenterTex1{
-    block-size: auto;
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0);
-    margin-left: 320px;
-    margin-right: 50px;
-    padding: 10px 20px; 
-    margin-block-end: 1%;
-}
-#CenterTex2{
-    block-size: auto;
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0);
-    margin-left: 320px;
-    margin-right: 50px;
-    padding: 10px 20px; 
-    margin-block-end: 1%;
-}
-#CenterTex3{
-    block-size: auto;
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0);
-    margin-left: 320px;
-    margin-right: 50px;
-    padding: 10px 20px; 
-    margin-block-end: 1%;
-}
-#CenterTex4{
-    block-size: auto;
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0);
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 40px 80px; 
-    margin-block-end: 2%;
+/* Responsividade */
+@media (max-width: 900px) {
+  #CenterTex1, #CenterTex2, #CenterTex3, #CenterTex4 {
+    max-width: 94vw;
+    padding: 12px 2vw;
+  }
+  #h1 {
+    font-size: 1.2rem;
+    max-width: 98vw;
+  }
+  nav > a {
+    font-size: 1.18rem;
+  }
 }
 
+@media (max-width: 600px) {
+  #imgDog img {
+    max-width: 98vw;
+  }
 
-#imgDog{
-    text-align: center;
-    vertical-align: middle;
-    background-color: #F2F2F2;
+  nav {
+    gap: 8px;
+    padding: 10px 0;
+  }
 
+  #CenterTex1, #CenterTex2, #CenterTex3, #CenterTex4 {
+    margin: 12px auto;
+    padding: 10px 1vw;
+    font-size: 0.95rem;
+  }
+  #h1 {
+    font-size: 1rem;
+  }
+  #Contato h1 {
+    font-size: 1rem;
+  }
+  footer {
+    padding: 12px 0 8px 0;
+  }
 }
 
-
+/* faz o modo claro e escuro */
+/* Botão Dark Mode */
+#darkModeToggle {
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    z-index: 9999;
+    background: #222;
+    color: #FFDF00;
+    font-size: 2.2rem;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px 9px #0004;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    transition: all 0.22s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* pequena animação ao trocar emoji */
+  }
+  
+  #darkModeToggle:hover {
+    font-size: 2.6rem;
+    background: #444;
+    transition: all 0.22s;
+  }
+  
+  body.dark-mode {
+    background: #181818 !important;
+    color: #eee !important;
+  }
+  
+  body.dark-mode header,
+  body.dark-mode nav,
+  body.dark-mode footer,
+  body.dark-mode #Contato {
+    background: #222 !important;
+    color: #F7D774 !important;
+  }
+  body.dark-mode a {
+    color: #ffd900;
+  }
+  
+  body.dark-mode nav > a {
+    color: #FFD900;
+  }
+  body.dark-mode nav a:first-child {
+    color: #ffd900;
+  }
+  body.dark-mode .CenterText {
+    background: #2020204a;
+  }
+  
+  body.dark-mode #h1 {
+    color: #FFD900;
+    background: #1a1a1a;
+  }
+  body.dark-mode #redesocial img {
+    filter: brightness(0.7) invert(1);
+  }

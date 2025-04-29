@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +23,13 @@
     </a>
     <a href="pg2.html">pagina 1</a>
     <a href="pg3.html">pagina2</a>
-    
-</nav>
+    <!-- Botão do modo escuro -->
+<button id="darkModeToggle" aria-label="Alternar modo">
+🌞
+</button>
 
+<script src="darkmode.js"></script>
+</nav>
 
  <!-- começo do footer -->
  <footer>
@@ -42,7 +46,35 @@
         </div>
     </div>
 
-    
+    <script>
+        const btn = document.getElementById('darkModeToggle');
+
+function ativarModoEscuro() {
+    document.body.classList.add('dark-mode');
+    btn.innerText = '🌙';
+}
+function desativarModoEscuro() {
+    document.body.classList.remove('dark-mode');
+    btn.innerText = '🌞';
+}
+
+// Verifica se o usuário já tem preferência salva
+if (localStorage.getItem('modo-escuro') === 'sim') {
+    ativarModoEscuro();
+} else {
+    desativarModoEscuro();
+}
+
+btn.addEventListener('click', () => {
+    if (document.body.classList.contains('dark-mode')) {
+        desativarModoEscuro();
+        localStorage.setItem('modo-escuro', 'nao');
+    } else {
+        ativarModoEscuro();
+        localStorage.setItem('modo-escuro', 'sim');
+    }
+});
+        </script>
  </footer>
 </body>
 </html>
