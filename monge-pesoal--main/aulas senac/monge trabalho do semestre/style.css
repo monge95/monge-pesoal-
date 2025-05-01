@@ -100,6 +100,14 @@ footer {
   display: block;
 }
 
+
+
+
+
+
+
+
+
 /* Responsividade */
 @media (max-width: 900px) {
   #CenterTex1, #CenterTex2, #CenterTex3, #CenterTex4 {
@@ -120,10 +128,6 @@ footer {
     max-width: 98vw;
   }
 
-  nav {
-    gap: 8px;
-    padding: 10px 0;
-  }
 
   #CenterTex1, #CenterTex2, #CenterTex3, #CenterTex4 {
     margin: 12px auto;
@@ -141,7 +145,74 @@ footer {
   }
 }
 
-/* faz o modo claro e escuro */
+/* Galeria de imagens responsiva para pg3 */
+.galeria-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin: 24px auto;
+  max-width: 980px;
+}
+
+.galeria-imagens .galeria-item {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #0001;
+  overflow: hidden;
+  flex: 1 1 270px;    /* Cresce e encolhe, largura base: 270px */
+  max-width: 300px;
+  min-width: 180px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.galeria-imagens .galeria-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 180px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* Para telas pequenas */
+@media (max-width: 800px) {
+  .galeria-imagens {
+    gap: 10px;
+  }
+  .galeria-imagens .galeria-item {
+    min-width: 120px;
+    max-width: 46vw;
+    padding: 5px;
+  }
+  .galeria-imagens .galeria-item img {
+    max-height: 110px;
+  }
+}
+
+@media (max-width: 500px) {
+  .galeria-imagens .galeria-item {
+    min-width: 90vw;
+    max-width: 99vw;
+    padding: 4px;
+  }
+  .galeria-imagens {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+body.dark-mode .galeria-imagens .galeria-item {
+  background: #181818;
+  color: #fff;
+  box-shadow: 0 0 20px #ffd90020;
+}
+
+
 /* Botão Dark Mode */
 #darkModeToggle {
     position: fixed;
@@ -149,7 +220,7 @@ footer {
     right: 26px;
     z-index: 9999;
     background: #222;
-    color: #FFDF00;
+    color: #ffd500;
     font-size: 2.2rem;
     border: none;
     border-radius: 50%;
@@ -175,12 +246,15 @@ footer {
     color: #eee !important;
   }
   
-  body.dark-mode header,
+  body.dark-mode header{
+    background: #fdbe00  !important;
+    color: #ffffff !important;
+  }
   body.dark-mode nav,
   body.dark-mode footer,
   body.dark-mode #Contato {
     background: #222 !important;
-    color: #F7D774 !important;
+    color: #ffffff !important;
   }
   body.dark-mode a {
     color: #ffd900;
@@ -197,7 +271,7 @@ footer {
   }
   
   body.dark-mode #h1 {
-    color: #FFD900;
+    color: #ffd900;
     background: #1a1a1a;
   }
   body.dark-mode #redesocial img {
